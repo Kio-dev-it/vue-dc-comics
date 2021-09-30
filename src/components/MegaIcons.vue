@@ -1,21 +1,22 @@
 <template>
-    <div class="mega-icon">
+    <div class="mega-icons">
         <h3>MegaIcons here</h3>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'MegaIcon'
+    name: 'MegaIcons'
 
 }
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/variables.scss';
 
-.mega-icon{
+.mega-icons{
     color: #fff;
-    background-color: #0282f9;
+    background-color: $mainColor;
 }
 
 </style>
