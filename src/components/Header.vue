@@ -84,11 +84,15 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        li:not(:first-child){
+            margin-left: 2.1875rem;
+        }
         
         li {
             list-style: none;
             display: inline-block;
-            padding: 0 .375rem;
+            font-size: .875rem;
 
             a{
                 display: inline-block;
@@ -98,10 +102,12 @@ header{
                 color: #000;
                 font-weight: 700;
 
-                &.active{
+                &.active, &:hover{
                     border-bottom: 6px solid $mainColor;
                     color: $mainColor;
                 }
+
+
 
             }
         }
